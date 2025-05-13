@@ -1,0 +1,44 @@
+{
+  "testimonials": [
+    {
+      "id": "1",
+      "name": "André Lemelle",
+      "position": "CEO ADLServices",
+      "avatar": "images/testimonials/andre-lemelle.png",
+      "content": "Working with Tom was simple and efficient. He managed to create a website that reflects my business, and his photos really highlight our achievements. A true professional, attentive and responsive.",
+      "rating": 5
+    },
+    {
+      "id": "2",
+      "name": "Grégory Lamare",
+      "position": "Director of Archimaide76",
+      "avatar": "images/testimonials/gregory-lamare.jpg",
+      "content": "Working with Tom was simple and efficient. He managed to create a website that reflects my business, and his photos really highlight our achievements. A true professional, attentive and responsive.",
+      "rating": 5
+    },
+    {
+      "id": "3",
+      "name": "Charles Lefevbre",
+      "position": "CEO TUCOMMENCESDEMAIN",
+      "avatar": "images/testimonials/charles-lefevbre.jpg",
+      "content": "I am extremely satisfied with my collaboration with Tom for my audiovisual project. His expertise and creativity really brought my vision to life. High-quality work, thank you!",
+      "rating": 5
+    },
+    {
+      "id": "4",
+      "name": "Clément Leroy",
+      "position": "Partner ADLCabinet",
+      "avatar": "images/testimonials/clement-leroy.jpg",
+      "content": "Tom captured the essence of our practice with a polished website and high-quality photos. Professional, discreet, and efficient from start to finish.",
+      "rating": 5
+    },
+    {
+      "id": "5",
+      "name": "Eugénie Berry",
+      "position": "Manager Fragrance Damiette",
+      "avatar": "images/testimonials/eugenie-berry.jpg",
+      "content": "Thank you to Tom for his work with our perfumery. The photos are of high quality, and his versatility allows him to adapt to any situation. Highly recommended!",
+      "rating": 5
+    }
+  ]
+}

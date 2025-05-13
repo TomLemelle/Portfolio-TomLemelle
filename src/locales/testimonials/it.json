@@ -1,0 +1,44 @@
+{
+  "testimonials": [
+    {
+      "id": "1",
+      "name": "André Lemelle",
+      "position": "CEO ADLServices",
+      "avatar": "images/testimonials/andre-lemelle.png",
+      "content": "Lavorare con Tom è stato semplice ed efficiente. È riuscito a creare un sito che rispecchia la mia azienda e le sue foto mettono veramente in risalto i nostri risultati. Un vero professionista, attento e reattivo.",
+      "rating": 5
+    },
+    {
+      "id": "2",
+      "name": "Grégory Lamare",
+      "position": "Direttore di Archimaide76",
+      "avatar": "images/testimonials/gregory-lamare.jpg",
+      "content": "Lavorare con Tom è stato semplice ed efficiente. È riuscito a creare un sito che rispecchia la mia azienda e le sue foto mettono veramente in risalto i nostri risultati. Un vero professionista, attento e reattivo.",
+      "rating": 5
+    },
+    {
+      "id": "3",
+      "name": "Charles Lefevbre",
+      "position": "CEO TUCOMMENCESDEMAIN",
+      "avatar": "images/testimonials/charles-lefevbre.jpg",
+      "content": "Sono estremamente soddisfatto della mia collaborazione con Tom per il mio progetto audiovisivo. La sua esperienza e creatività hanno davvero dato vita alla mia visione. Un lavoro di alta qualità, grazie!",
+      "rating": 5
+    },
+    {
+      "id": "4",
+      "name": "Clément Leroy",
+      "position": "Partner ADLCabinet",
+      "avatar": "images/testimonials/clement-leroy.jpg",
+      "content": "Tom ha catturato l'essenza del nostro studio con un sito raffinato e foto di alta qualità. Professionale, discreto ed efficiente dall'inizio alla fine.",
+      "rating": 5
+    },
+    {
+      "id": "5",
+      "name": "Eugénie Berry",
+      "position": "Responsabile Fragrance Damiette",
+      "avatar": "images/testimonials/eugenie-berry.jpg",
+      "content": "Grazie a Tom per il suo lavoro con la nostra profumeria. Le foto sono di alta qualità e la sua versatilità gli permette di adattarsi a qualsiasi situazione. Lo consiglio vivamente!",
+      "rating": 5
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Progetti",
+    "services": "Servizi",
+    "testimonials": "Testimonianze",
+    "contact": "Contatti"
+  },
+  "home": {
+    "hero": {
+      "heading": "Ciao, sono",
+      "firstSubHeading": "Sviluppatore Web",
+      "secondSubHeading": "Fotografo",
+      "description": "Creo siti web moderni e catturo momenti indimenticabili attraverso il mio obiettivo. Con sede a Rouen, in Francia, mi occupo di creare siti web da 3 anni.",
+      "primaryButton": "Lavoriamo insieme",
+      "secondaryButton": "Scopri le mie realizzazioni"
+    },
+    "trustedBy": {
+      "heading": "Fiducia di",
+      "description": "Aziende con cui ho avuto il piacere di collaborare"
+    },
+    "myProjects": {
+      "heading": "I Miei Progetti",
+      "description": "Ecco una selezione dei miei ultimi lavori in sviluppo web e fotografia. Ogni progetto riflette il mio impegno per la qualità e la creatività.",
+      "secondaryButton": "Vedi tutti i progetti"
+    },
+    "myServices": {
+      "heading": "I Miei Servizi",
+      "description": "Offro una gamma di servizi per trasformare le tue idee in realtà, combinando competenza tecnica e design creativo.",
+      "webDevelopment": {
+        "heading": "Sviluppo Web",
+        "description": "Creazione di applicazioni web moderne, reattive e performanti utilizzando le tecnologie più recenti.",
+        "custom": {
+          "title": "Applicazioni Personalizzate",
+          "react": "Applicazioni React.js",
+          "nextjs": "Applicazioni Next.js",
+          "vuejs": "Applicazioni Vue.js",
+          "nodejs": "Servizi backend Node.js",
+          "adonisjs": "Applicazioni backend AdonisJS"
+        },
+        "webflow": {
+          "title": "Sviluppo Webflow",
+          "webflow": "Siti Web Webflow personalizzati",
+          "cms": "Integrazione CMS",
+          "responsive": "Design reattivo"
+        },
+        "mobile": {
+          "title": "Sviluppo Mobile",
+          "reactNative": "Applicazioni React Native",
+          "crossPlatform": "Sviluppo cross-platform",
+          "store": "Distribuzione su App Store"
+        },
+        "devops": {
+          "title": "DevOps & Infrastruttura",
+          "docker": "Containerizzazione Docker",
+          "cicd": "Configurazione pipeline CI/CD",
+          "infrastructure": "Gestione infrastruttura"
+        }
+      },
+      "photography": {
+        "heading": "Fotografia",
+        "description": "Servizi fotografici professionali per privati e aziende.",
+        "portrait": {
+          "title": "Fotografia di Ritratto",
+          "headshots": "Ritratti professionali",
+          "environmental": "Ritratti in ambienti naturali",
+          "group": "Ritratti di gruppo"
+        },
+        "corporate": {
+          "title": "Fotografia Aziendale",
+          "team": "Foto di gruppo",
+          "office": "Ambiente di lavoro",
+          "events": "Eventi aziendali",
+          "product": "Fotografia di prodotto"
+        }
+      },
+      "videography": {
+        "heading": "Videografia",
+        "description": "Produzione video di alta qualità per progetti creativi e aziendali.",
+        "corporate": {
+          "title": "Video Aziendali",
+          "presentations": "Presentazioni aziendali",
+          "demonstrations": "Demonstrazioni di prodotto",
+          "interviews": "Interviste ai dipendenti",
+          "event": "Copertura eventi"
+        },
+        "storyTelling": {
+          "title": "Storytelling",
+          "stories": "Storie aziendali",
+          "behind": "Dietro le quinte",
+          "testimonials": "Testimonianze dei clienti",
+          "narratives": "Narrazioni del brand"
+        }
+      }
+    },
+    "testimonials": {
+      "heading": "Testimonianze",
+      "description": "Scopri cosa dicono i miei clienti sulla nostra collaborazione."
+    },
+    "contact": {
+      "heading": "Contattami",
+      "description": "Hai un progetto in mente o vuoi collaborare? Non esitare a contattarmi per creare insieme qualcosa di straordinario.",
+      "title": "Informazioni di contatto",
+      "location": "Posizione",
+      "email": "E-mail",
+      "phone": "Telefono"
+    },
+    "footer": {
+      "slogan": "Sviluppatore Web e Fotografo con sede a Rouen, Francia. Creo siti web eleganti e catturo momenti unici dal 2022.",
+      "quickLinks": {
+        "heading": "Link veloci",
+        "home": "Home",
+        "projects": "Progetti",
+        "services": "Servizi",
+        "testimonials": "Testimonianze",
+        "contact": "Contatti"
+      },
+      "contact": {
+        "heading": "Contatti"
+      },
+      "copyright": "Tutti i diritti riservati."
+    }
+  },
+  "projects": {
+    "heading": "I miei progetti",
+    "description": "Scopri i miei lavori, dai siti web dinamici alle app mobili.",
+    "filters": {
+      "all": "Tutti",
+      "custom": "Applicazioni personalizzate",
+      "webflow": "Webflow",
+      "mobile": "Mobile",
+      "game": "Giochi",
+      "photography": "Fotografia",
+      "videography": "Videografia"
+    },
+    "viewProject": "Vedi il progetto"
+  },
+  "detailedProject": {
+    "back": "Torna ai progetti",
+    "client": "Cliente: ",
+    "visitProject": "Visita il progetto",
+    "technologies": "Tecnologie",
+    "similar": "Hai bisogno di un progetto simile?",
+    "interested": "Se sei interessato a un progetto simile, non esitare a contattarmi per discutere le tue idee.",
+    "primaryButton": "Contattami",
+    "notFound": "Progetto non trovato",
+    "notFoundExplanation": "Il progetto che stai cercando non esiste o è stato rimosso."
+  }
+}

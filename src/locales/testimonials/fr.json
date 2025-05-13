@@ -1,0 +1,44 @@
+{
+  "testimonials": [
+    {
+      "id": "1",
+      "name": "André Lemelle",
+      "position": "PDG ADLServices",
+      "avatar": "images/testimonials/andre-lemelle.png",
+      "content": "Travailler avec Tom a été simple et efficace. Il a su créer un site à l’image de mon entreprise, et ses photos mettent vraiment en valeur nos réalisations. Un vrai pro, à l’écoute et réactif.",
+      "rating": 5
+    },
+    {
+      "id": "2",
+      "name": "Grégory Lamare",
+      "position": "Directeur d'Archimaide76",
+      "avatar": "images/testimonials/gregory-lamare.jpg",
+      "content": "Travailler avec Tom a été simple et efficace. Il a su créer un site à l’image de mon entreprise, et ses photos mettent vraiment en valeur nos réalisations. Un vrai pro, à l’écoute et réactif.",
+      "rating": 5
+    },
+    {
+      "id": "3",
+      "name": "Charles Lefevbre",
+      "position": "PDG TUCOMMENCESDEMAIN",
+      "avatar": "images/testimonials/charles-lefevbre.jpg",
+      "content": "Je suis extrêmement satisfait de ma collaboration avec Tom pour mon projet audiovisuel. Son expertise et sa créativité ont vraiment donné vie à ma vision. Un travail de grande qualité, merci !",
+      "rating": 5
+    },
+    {
+      "id": "4",
+      "name": "Clément Leroy",
+      "position": "Associé ADLCabinet",
+      "avatar": "images/testimonials/clement-leroy.jpg",
+      "content": "Tom a su capter l’essence de notre cabinet à travers un site soigné et des photos de grande qualité. Pro, discret et efficace du début à la fin.",
+      "rating": 5
+    },
+    {
+      "id": "5",
+      "name": "Eugénie Berry",
+      "position": "Responsable Fragrance Damiette",
+      "avatar": "images/testimonials/eugenie-berry.jpg",
+      "content": "Merci à Tom pour son travail auprès de notre parfumerie. Les photos sont de grande qualité, et sa polyvalence lui permet de s’adapter à toutes les situations. Je recommande vivement !",
+      "rating": 5
+    }
+  ]
+}

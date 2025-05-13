@@ -1,0 +1,158 @@
+{
+  "projects": [
+    {
+      "id": "safeeat",
+      "title": "SafeEat - Startup",
+      "description": "Platform for allergen management in the food service industry.",
+      "content": "## SafeEat: Allergen Management Platform\n\nDevelopment of an innovative platform designed for restaurateurs, canteens, and catering services. With **SafeEat**, professionals can:\n\n- Create their restaurant profile\n- Add recipes with detailed ingredients\n- Organize their complete menus\n\nCustomers access this information via a **dynamic QR code**, with mobile-optimized navigation.\n\n---\n\n## A Safe and Personalized Experience for Customers\n\nUsers can:\n\n- Filter dishes in real-time based on allergies or diets\n- Enjoy a safe, personalized dining experience in compliance with regulations\n\n---\n\n## Features for Restaurateurs\n\n- Export recipes with allergens listed\n- Update history\n- Clear allergen table for each dish\n- Customer comments\n- Graphical dashboard for optimizing the offer\n\n---\n\n## My Role\n\nAs **co-founder and CTO**, I was responsible for:\n\n- Full development (**React**, **AdonisJS**, **TypeScript**)\n- Infrastructure: **Docker**, **PostgreSQL**, **GitHub Actions** (CI/CD), **Hostinger KVM 2** (VPS)\n\n---\n\n## Technologies Used\n\n- **React**: [https://react.dev](https://react.dev)\n- **AdonisJS**: [https://adonisjs.com](https://adonisjs.com)\n- **TypeScript**: [https://www.typescriptlang.org/](https://www.typescriptlang.org/)\n- **Docker**: [https://www.docker.com/](https://www.docker.com/)\n- **PostgreSQL**: [https://www.postgresql.org/](https://www.postgresql.org/)\n- **GitHub Actions**: [https://github.com/features/actions](https://github.com/features/actions)\n- **Hostinger KVM 2**: [https://www.hostinger.com/](https://www.hostinger.com/)\n\n---\n\n## My Role\n\nAs **co-founder and CTO**, I supervised all technical development and infrastructure.\n\n> This project was successfully tested, especially at **Bouillon d'Or** in Rouen.",
+      "categories": ["custom"],
+      "technologies": [
+        {
+          "name": "React",
+          "url": "https://react.dev"
+        },
+        {
+          "name": "Adonis",
+          "url": "https://adonisjs.com/"
+        },
+        {
+          "name": "Typescript",
+          "url": "https://www.typescriptlang.org/"
+        },
+        {
+          "name": "Docker",
+          "url": "https://www.docker.com/"
+        },
+        {
+          "name": "NGINX",
+          "url": "https://nginx.org/"
+        }
+      ],
+      "date": "November 2023 - January 2025",
+      "client": "SafeEat",
+      "thumbnail": "images/realisations/safeeat-thumbnail.png",
+      "images": [
+        "images/realisations/safeeat-thumbnail.png",
+        "images/realisations/safeeat-project1.jpg",
+        "images/realisations/safeeat-project2.jpg",
+        "images/realisations/safeeat-project3.jpg",
+        "images/realisations/safeeat-project4.jpg"
+      ]
+    },
+    {
+      "id": "adlcabinet",
+      "title": "ADLCabinet - Website",
+      "description": "Website for a dental practice in Franqueville-Saint-Pierre.",
+      "content": "## ADLCabinet: Dental Practice Website\n\nI designed and developed the website for the dental practice **ADLCabinet** in Franqueville-Saint-Pierre using **Webflow**. The website is created to offer a smooth and accessible experience for users, while showcasing the services of the practice. The clean and professional design aims to reassure visitors and encourage potential patients to easily book an appointment.\n\n---\n\n## Complementary Visuals\n\nTo complement the project, I also created a series of professional photos, including portraits of the team and images of the practice. These visuals strengthen the identity of the website and the practice's communication materials.\n\n---\n\n## Technologies Used\n\n- **Webflow**: [https://webflow.com](https://webflow.com)\n\n---\n\n## Role\n\nAs the **designer and developer**, I was responsible for the entire process of designing, developing, and implementing the website.\n\n> This project was completed in January 2025.",
+      "categories": ["webflow"],
+      "technologies": [
+        {
+          "name": "Webflow",
+          "url": "https://webflow.com/"
+        }
+      ],
+      "date": "January 2025",
+      "client": "ADLCabinet",
+      "thumbnail": "images/realisations/adl-cabinet-website-thumbnail.jpg",
+      "images": [
+        "images/realisations/adl-cabinet-website-thumbnail.jpg",
+        "images/realisations/realisation-project-adlcabinet-2.jpg",
+        "images/realisations/realisation-project-adlcabinet-3.jpg",
+        "images/realisations/realisation-project-adlcabinet-4.jpg",
+        "images/realisations/realisation-project-adlcabinet-5.jpg"
+      ]
+    },
+    {
+      "id": "adlcabinet-photography",
+      "title": "ADLCabinet - Photography",
+      "description": "Professional Photography for a dental practice in Franqueville-Saint-Pierre.",
+      "content": "## ADLCabinet: Professional Photography\n\nProduction of a series of professional photos for the dental practice **ADLCabinet** in Franqueville-Saint-Pierre. The photos highlight the modern and welcoming space of the practice, offering a polished visual presentation for the website and marketing communications.\n\n---\n\n## Technologies used\n\n- **Adobe Lightroom Classic**: [https://www.adobe.com/fr/products/photoshop-lightroom-classic.html](https://www.adobe.com/fr/products/photoshop-lightroom-classic.html)\n\n---\n\n## My role\n\nAs the **photographer**, I captured all the photos of the space and team, ensuring a polished visual presentation for the website and marketing materials.\n\n> This project was completed in January 2025.",
+      "categories": ["photography"],
+      "technologies": [
+        {
+          "name": "Adobe Lightroom Classic",
+          "url": "https://www.adobe.com/fr/products/photoshop-lightroom-classic.html"
+        }
+      ],
+      "date": "January 2025",
+      "client": "ADLCabinet",
+      "thumbnail": "images/realisations/adl-cabinet-photos-thumbnail.png",
+      "images": [
+        "images/realisations/adlcabinet-photos-1.jpg",
+        "images/realisations/adlcabinet-photos-2.jpg",
+        "images/realisations/adlcabinet-photos-3.jpg",
+        "images/realisations/adlcabinet-photos-4.jpg",
+        "images/realisations/adlcabinet-photos-5.jpg",
+        "images/realisations/adlcabinet-photos-6.jpg",
+        "images/realisations/adlcabinet-photos-7.jpg",
+        "images/realisations/adlcabinet-photos-8.jpg"
+      ]
+    },
+    {
+      "id": "mime-time",
+      "title": "MimeTime - Mobile Game",
+      "description": "A turn-based mime game accessible on mobile, developed solo.",
+      "content": "## MimeTime: Turn-based Mime Game\n\nMimeTime is a turn-based mime game that I designed and developed solo. Players can mime words, skip questions, assign points, and track scores via a live scoreboard. The game is available at [https://mime-time.vercel.app/](https://mime-time.vercel.app/) and is best played on mobile. The game includes customizable settings: number of players, points to reach, time per round, etc.\n\nThis project allowed me to improve my skills in React, Vite, and Figma, which I used for designing the interface. It is hosted on GitHub and deployed via Vercel.\n\n---\n\n## Technologies Used\n\n- **React**: [https://react.dev](https://react.dev)\n- **Vite**: [https://vitejs.dev/](https://vitejs.dev/)\n- **Figma**: [https://www.figma.com/](https://www.figma.com/)\n- **Vercel**: [https://vercel.com/](https://vercel.com/)\n- **GitHub**: [https://github.com/](https://github.com/)\n\n---\n\n## My Role\n\nAs **developer and designer**, I designed and developed the entire game, from the interface to the backend implementation.\n\n> This project was completed in March 2025.",
+      "categories": ["game"],
+      "technologies": [
+        {
+          "name": "React",
+          "url": "https://react.dev"
+        },
+        {
+          "name": "Vite",
+          "url": "https://vitejs.dev/"
+        },
+        {
+          "name": "Figma",
+          "url": "https://www.figma.com/"
+        },
+        {
+          "name": "Vercel",
+          "url": "https://vercel.com/"
+        },
+        {
+          "name": "GitHub",
+          "url": "https://github.com/"
+        }
+      ],
+      "date": "March 2025",
+      "client": "Personal Project",
+      "thumbnail": "images/realisations/mime-time-thumbnail.png",
+      "images": ["images/realisations/mime-time-thumbnail.png"]
+    },
+    {
+      "id": "you-prefer-this-or-that",
+      "title": "You Prefer This or That - Halloween Game",
+      "description": "A small Halloween-themed game built solo, based on a visual elimination concept.",
+      "content": "## You Prefer This or That: Halloween Game\n\nYou Prefer This or That is a small game I designed and built myself, with a Halloween theme. The concept, inspired by Kombini videos, is simple: choose between two characters. The chosen one continues, and the other is eliminated. This continues until there’s a single winner. During the game, players can view a summary of their past choices, and a full recap is shown at the end along with the winning character. This project helped me improve my skills in React, Vite, and Figma for UI design. It’s hosted on GitHub, deployed with Vercel, and accessible here: [https://you-prefer-this-or-that.vercel.app/](https://you-prefer-this-or-that.vercel.app/)\n\n---\n\n## Technologies Used\n\n- **React**: [https://react.dev](https://react.dev)\n- **Vite**: [https://vitejs.dev/](https://vitejs.dev/)\n- **Figma**: [https://www.figma.com/](https://www.figma.com/)\n- **Vercel**: [https://vercel.com/](https://vercel.com/)\n- **GitHub**: [https://github.com/](https://github.com/)\n\n---\n\n## My Role\n\nAs **developer and designer**, I designed and developed the entire game, including the interface and backend implementation.\n\n> This project was completed in October 2024.",
+      "categories": ["game"],
+      "technologies": [
+        {
+          "name": "React",
+          "url": "https://react.dev"
+        },
+        {
+          "name": "Vite",
+          "url": "https://vitejs.dev/"
+        },
+        {
+          "name": "Figma",
+          "url": "https://www.figma.com/"
+        },
+        {
+          "name": "Vercel",
+          "url": "https://vercel.com/"
+        },
+        {
+          "name": "GitHub",
+          "url": "https://github.com/"
+        }
+      ],
+      "date": "October 2024",
+      "client": "Personal Project",
+      "thumbnail": "images/realisations/thisorthat-thumbnail.jpg",
+      "images": ["images/realisations/thisorthat-thumbnail.jpg"]
+    }
+  ]
+}

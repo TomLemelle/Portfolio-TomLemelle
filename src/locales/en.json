@@ -1,0 +1,149 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "services": "Services",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "heading": "Hi, I'm",
+      "firstSubHeading": "Web Developer",
+      "secondSubHeading": "Photographer",
+      "description": "I create stunning websites and capture beautiful moments through my lens. Based in Rouen, France, I've been bringing digital experiences to life for 3 years.",
+      "primaryButton": "Let's Work Together",
+      "secondaryButton": "View My Work"
+    },
+    "trustedBy": {
+      "heading": "Trusted By",
+      "description": "Companies i've had the pleasure to work with"
+    },
+    "myProjects": {
+      "heading": "My Projects",
+      "description": "A selection of my latest work across web development and photography. Each project demonstrates my commitment to quality and creativity.",
+      "secondaryButton": "View All Projects"
+    },
+    "myServices": {
+      "heading": "My Services",
+      "description": "I offer a range of services to help bring your vision to life, combining technical expertise with creative design.",
+      "webDevelopment": {
+        "heading": "Web Development",
+        "description": "Creating modern, responsive, and performant web applications using cutting-edge technologies.",
+        "custom": {
+          "title": "Custom Applications",
+          "react": "React.js applications",
+          "nextjs": "Next.js applications",
+          "vuejs": "Vue.js applications",
+          "nodejs": "Node.js backend services",
+          "adonisjs": "AdonisJS backend applications"
+        },
+        "webflow": {
+          "title": "Webflow Development",
+          "webflow": "Custom Webflow websites",
+          "cms": "CMS integration",
+          "responsive": "Responsive design"
+        },
+        "mobile": {
+          "title": "Mobile Development",
+          "reactNative": "React Native applications",
+          "crossPlatform": "Cross-platform development",
+          "store": "App Store deployment"
+        },
+        "devops": {
+          "title": "DevOps & Infrastructure",
+          "docker": "Docker containerization",
+          "cicd": "CI/CD pipeline setup",
+          "infrastructure": "Infrastructure management"
+        }
+      },
+      "photography": {
+        "heading": "Photography",
+        "description": "Professional photography services for individuals and businesses.",
+        "portrait": {
+          "title": "Portrait Photography",
+          "headshots": "Professional headshots",
+          "environmental": "Environmental portraits",
+          "group": "Professional group portraits"
+        },
+        "corporate": {
+          "title": "Corporate Photography",
+          "team": "Team photos",
+          "office": "Office environment",
+          "events": "Corporate events",
+          "product": "Product photography"
+        }
+      },
+      "videography": {
+        "heading": "Videography",
+        "description": "High-quality video production services for corporate and creative projects.",
+        "corporate": {
+          "title": "Corporate Videos",
+          "presentations": "Company presentations",
+          "demonstrations": "Product demonstrations",
+          "interviews": "Employee interviews",
+          "event": "Event coverage"
+        },
+        "storyTelling": {
+          "title": "Story Telling",
+          "stories": "Company stories",
+          "behind": "Behind-the-scenes",
+          "testimonials": "Customer testimonials",
+          "narratives": "Brand narratives"
+        }
+      }
+    },
+    "testimonials": {
+      "heading": "Testimonials",
+      "description": "Hear what my clients have to say about their experience working with me."
+    },
+    "contact": {
+      "heading": "Get In Touch",
+      "description": "Have a project in mind or want to collaborate? Feel free to reach out and let's create something amazing together.",
+      "title": "Contact Information",
+      "location": "Location",
+      "email": "email",
+      "phone": "Phone"
+    },
+    "footer": {
+      "slogan": "Web Developer & Photographer based in Rouen, France. Creating beautiful websites and capturing stunning moments since 2022.",
+      "quickLinks": {
+        "heading": "Quick Links",
+        "home": "Home",
+        "projects": "Projects",
+        "services": "Services",
+        "testimonials": "Testimonials",
+        "contact": "Contact"
+      },
+      "contact": {
+        "heading": "Contact"
+      },
+      "copyright": "All rights reserved."
+    }
+  },
+  "projects": {
+    "heading": "My Projects",
+    "description": "Explore my work, ranging from dynamic websites to mobile apps.",
+    "filters": {
+      "all": "All",
+      "custom": "Custom Applications",
+      "webflow": "Webflow",
+      "mobile": "Mobile",
+      "game": "Games",
+      "photography": "Photography",
+      "videography": "Videography"
+    },
+    "viewProject": "View Project"
+  },
+  "detailedProject": {
+    "back": "Back to projects",
+    "client": "Client: ",
+    "visitProject": "Visiter le projet",
+    "technologies": "Technologies",
+    "similar": "Need a similar project?",
+    "interested": "If you're interested in a similar project, feel free to get in touch to discuss your ideas.",
+    "primaryButton": "Contact Me",
+    "notFound": "Project Not Found",
+    "notFoundExplanation": "The project you're looking for doesn't exist or has been removed."
+  }
+}

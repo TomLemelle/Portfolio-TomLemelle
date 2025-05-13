@@ -1,0 +1,149 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "services": "Services",
+    "testimonials": "Avis clients",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "heading": "Bonjour, je suis",
+      "firstSubHeading": "Développeur Web",
+      "secondSubHeading": "Photographe",
+      "description": "Je crée des sites web modernes et je capture des moments uniques à travers mon objectif. Basé à Rouen, en France, je conçois des sites webs depuis 3 ans.",
+      "primaryButton": "Travaillons ensemble",
+      "secondaryButton": "Découvrez mes réalisations"
+    },
+    "trustedBy": {
+      "heading": "Ils me font confiance",
+      "description": "Les entreprises avec lesquelles j'ai eu le plaisir de collaborer"
+    },
+    "myProjects": {
+      "heading": "Mes Projets",
+      "description": "Voici une sélection de mes derniers travaux en développement web et en photographie. Chaque projet reflète mon engagement envers la qualité et la créativité.",
+      "secondaryButton": "Voir tous les projets"
+    },
+    "myServices": {
+      "heading": "Mes Services",
+      "description": "Je propose des services variés pour concrétiser vos idées, alliant expertise technique et design créatif.",
+      "webDevelopment": {
+        "heading": "Développement Web",
+        "description": "Création d'applications web modernes, réactives et performantes, en utilisant les technologies les plus récentes.",
+        "custom": {
+          "title": "Applications sur mesure",
+          "react": "Applications React.js",
+          "nextjs": "Applications Next.js",
+          "vuejs": "Applications Vue.js",
+          "nodejs": "Services backend Node.js",
+          "adonisjs": "Applications backend AdonisJS"
+        },
+        "webflow": {
+          "title": "Développement Webflow",
+          "webflow": "Sites Web Webflow personnalisés",
+          "cms": "Intégration CMS",
+          "responsive": "Design adaptable"
+        },
+        "mobile": {
+          "title": "Développement Mobile",
+          "reactNative": "Applications React Native",
+          "crossPlatform": "Développement multiplateforme",
+          "store": "Publication sur l'App Store"
+        },
+        "devops": {
+          "title": "DevOps & Infrastructure",
+          "docker": "Containerisation Docker",
+          "cicd": "Configuration des pipelines CI/CD",
+          "infrastructure": "Gestion de l'infrastructure"
+        }
+      },
+      "photography": {
+        "heading": "Photographie",
+        "description": "Services de photographie professionnelle pour particuliers et entreprises.",
+        "portrait": {
+          "title": "Photographie de portrait",
+          "headshots": "Portraits professionnels",
+          "environmental": "Portraits en environnement naturel",
+          "group": "Portraits de groupe"
+        },
+        "corporate": {
+          "title": "Photographie d'entreprise",
+          "team": "Photos d'équipe",
+          "office": "Environnement de travail",
+          "events": "Événements d'entreprise",
+          "product": "Photographie produit"
+        }
+      },
+      "videography": {
+        "heading": "Vidéo",
+        "description": "Production vidéo de haute qualité pour vos projets créatifs et professionnels.",
+        "corporate": {
+          "title": "Vidéos d'entreprise",
+          "presentations": "Présentations d'entreprise",
+          "demonstrations": "Démonstrations produits",
+          "interviews": "Interviews d'employés",
+          "event": "Couverture d'événements"
+        },
+        "storyTelling": {
+          "title": "Narration",
+          "stories": "Histoires d'entreprise",
+          "behind": "Coulisses",
+          "testimonials": "Témoignages clients",
+          "narratives": "Récits de marque"
+        }
+      }
+    },
+    "testimonials": {
+      "heading": "Avis clients",
+      "description": "Découvrez les retours de mes clients sur notre collaboration."
+    },
+    "contact": {
+      "heading": "Contactez-moi",
+      "description": "Vous avez un projet en tête ou souhaitez collaborer ? N'hésitez pas à me contacter pour créer ensemble quelque chose d'exceptionnel.",
+      "title": "Informations de contact",
+      "location": "Localisation",
+      "email": "E-mail",
+      "phone": "Téléphone"
+    },
+    "footer": {
+      "slogan": "Développeur Web et Photographe basé à Rouen, France. Création de sites web élégants et capture de moments inoubliables depuis 2022.",
+      "quickLinks": {
+        "heading": "Liens rapides",
+        "home": "Accueil",
+        "projects": "Projets",
+        "services": "Services",
+        "testimonials": "Avis clients",
+        "contact": "Contact"
+      },
+      "contact": {
+        "heading": "Contact"
+      },
+      "copyright": "Tous droits réservés."
+    }
+  },
+  "projects": {
+    "heading": "Mes projets",
+    "description": "Découvrez mes réalisations, allant de sites web dynamiques à des applications mobiles.",
+    "filters": {
+      "all": "Tout",
+      "custom": "Applications personnalisées",
+      "webflow": "Webflow",
+      "mobile": "Mobile",
+      "game": "Jeux",
+      "photography": "Photographie",
+      "videography": "Vidéographie"
+    },
+    "viewProject": "Voir le projet"
+  },
+  "detailedProject": {
+    "back": "Retour aux projets",
+    "client": "Client: ",
+    "visitProject": "Visiter le projet",
+    "technologies": "Technologies",
+    "similar": "Besoin d'un projet similaire ?",
+    "interested": "Si vous êtes intéressé par un projet similaire, n'hésitez pas à me contacter pour discuter de vos idées.",
+    "primaryButton": "Contactez-moi",
+    "notFound": "Projet introuvable",
+    "notFoundExplanation": "Le projet que vous recherchez n'existe pas ou a été supprimé."
+  }
+}

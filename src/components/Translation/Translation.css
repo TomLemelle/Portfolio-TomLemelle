@@ -1,0 +1,35 @@
+.languages-container {
+  position: relative;
+  z-index: 100;
+  background-color: white;
+}
+
+.languages-content-container {
+  box-shadow: 0px -1px 34px -6px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.languages-content-container > button,
+.actual-language {
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  transition: background-color 100ms ease-in-out;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.actual-language {
+  background-color: white;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+.languages-content-container > button:hover {
+  background-color: var(--grey-background);
+}
