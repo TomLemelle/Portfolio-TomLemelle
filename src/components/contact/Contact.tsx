@@ -60,7 +60,7 @@ const Contact = () => {
                     href="mailto:hello@tomlemelle.com"
                     className="opacity-80 hover:text-primary transition-colors"
                   >
-                    hello@tomlemelle.com
+                    tom.lemelle@gmail.com
                   </a>
                 </div>
               </div>
