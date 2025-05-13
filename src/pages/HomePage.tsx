@@ -4,7 +4,7 @@ import Services from "../components/services/Services";
 import Testimonials from "../components/testimonials/Testimonials";
 import Contact from "../components/contact/Contact";
 import { motion } from "framer-motion";
-import Companies from "../components/companies/companies";
+import Companies from "../components/companies/Companies";
 
 const HomePage = () => {
   return (
