@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink, useNavigate, useLocation } from "react-router-dom";
 import { MenuIcon, X, Settings } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslation } from "../contexts/TranslationProvider";
 
 const Navbar = () => {
   const { dictionary } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -23,7 +25,7 @@ const Navbar = () => {
         if (section) {
           const rect = section.getBoundingClientRect();
           if (rect.top <= 100 && rect.bottom >= 100) {
-            currentSection = `#${id}`;
+            currentSection = id;
           }
         }
       });
@@ -37,12 +39,24 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  const scrollToSection = (id: string) => {
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: id } });
+    } else {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+    setIsOpen(false);
+  };
+
   const navLinks = [
-    { name: dictionary.nav.home, path: "/" },
-    { name: dictionary.nav.projects, path: "/projects" },
-    { name: dictionary.nav.services, path: "/#services" },
-    { name: dictionary.nav.testimonials, path: "/#testimonials" },
-    { name: dictionary.nav.contact, path: "/#contact" },
+    { name: dictionary.nav.home, path: "/", internal: false },
+    { name: dictionary.nav.projects, path: "/projects", internal: false },
+    { name: dictionary.nav.services, path: "services", internal: true },
+    { name: dictionary.nav.testimonials, path: "testimonials", internal: true },
+    { name: dictionary.nav.contact, path: "contact", internal: true },
   ];
 
   return (
@@ -70,27 +84,50 @@ const Navbar = () => {
 
           <div className="hidden md:flex space-x-8">
             {navLinks.map((link) => {
-              const isActive = link.path.startsWith("#")
-                ? activeSection === link.path
-                : window.location.pathname === link.path;
+              const isRouteActive = location.pathname === link.path;
+              const isSectionActive =
+                link.internal &&
+                location.pathname === "/" &&
+                activeSection === link.path;
+              const isActive = isRouteActive || isSectionActive;
 
-              return (
-                <a
+              return link.internal ? (
+                <button
                   key={link.name}
-                  href={link.path}
+                  onClick={() => scrollToSection(link.path)}
                   className={`relative px-2 py-1 text-sm font-medium transition-all hover:text-primary ${
                     isActive ? "text-primary" : "text-text-dark"
                   }`}
                 >
                   {link.name}
-
-                  {/* Barre verte animée */}
                   <span
                     className={`absolute left-0 -bottom-0.5 h-0.5 bg-primary rounded-full transition-all duration-300 ${
                       isActive ? "w-full opacity-100" : "w-0 opacity-0"
                     }`}
                   ></span>
-                </a>
+                </button>
+              ) : (
+                <NavLink
+                  key={link.name}
+                  to={link.path}
+                  end
+                  className={({ isActive }) =>
+                    `relative px-2 py-1 text-sm font-medium transition-all hover:text-primary ${
+                      isActive ? "text-primary" : "text-text-dark"
+                    }`
+                  }
+                >
+                  {({ isActive }) => (
+                    <>
+                      {link.name}
+                      <span
+                        className={`absolute left-0 -bottom-0.5 h-0.5 bg-primary rounded-full transition-all duration-300 ${
+                          isActive ? "w-full opacity-100" : "w-0 opacity-0"
+                        }`}
+                      ></span>
+                    </>
+                  )}
+                </NavLink>
               );
             })}
           </div>
@@ -105,38 +142,6 @@ const Navbar = () => {
           </motion.button>
         </div>
       </div>
-
-      {/* Mobile menu */}
-      {isOpen && (
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-          transition={{ duration: 0.3 }}
-          className="md:hidden mt-2 mx-4 p-4 glass-dark rounded-xl"
-        >
-          <div className="flex flex-col space-y-4">
-            {navLinks.map((link) => {
-              const isActive = link.path.startsWith("#")
-                ? activeSection === link.path
-                : window.location.pathname === link.path;
-
-              return (
-                <a
-                  key={link.name}
-                  href={link.path}
-                  onClick={() => setIsOpen(false)}
-                  className={`px-4 py-2 text-text-light text-center rounded-md transition-all ${
-                    isActive ? "bg-primary/30" : "hover:bg-white/10"
-                  }`}
-                >
-                  {link.name}
-                </a>
-              );
-            })}
-          </div>
-        </motion.div>
-      )}
     </motion.nav>
   );
 };

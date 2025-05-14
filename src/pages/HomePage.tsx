@@ -5,8 +5,20 @@ import Testimonials from "../components/testimonials/Testimonials";
 import Contact from "../components/contact/Contact";
 import { motion } from "framer-motion";
 import Companies from "../components/companies/Companies";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const HomePage = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      const section = document.getElementById(location.state.scrollTo);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   return (
     <motion.div
       initial={{ opacity: 0 }}
