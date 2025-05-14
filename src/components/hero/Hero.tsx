@@ -145,7 +145,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative min-h-screen pt-24 pb-16 px-4 md:px-8 flex items-center">
+    <section className="relative min-h-screen pt-24 pb-16 px-4 md:px-8 flex items-center mt-16 lg:mt-0">
       {/* Background elements */}
       <div className="absolute inset-0 w-full h-full -z-10 overflow-hidden">
         {/* Big glowing blobs */}

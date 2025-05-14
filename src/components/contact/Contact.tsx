@@ -35,7 +35,7 @@ const Contact = () => {
               {dictionary.home.contact.title}
             </h3>
 
-            <div className="flex justify-start items-center gap-8">
+            <div className="flex flex-wrap justify-start items-center gap-8">
               <div className="flex items-start">
                 <div className="p-3 rounded-full bg-primary/10 text-primary">
                   <MapPin size={20} />
