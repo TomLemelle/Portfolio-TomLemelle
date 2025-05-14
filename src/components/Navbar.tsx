@@ -48,7 +48,7 @@ const Navbar = () => {
         section.scrollIntoView({ behavior: "smooth" });
       }
     }
-    setIsOpen(false);
+    setIsOpen(false); // Ferme le menu après avoir scrollé
   };
 
   const navLinks = [
@@ -142,6 +142,53 @@ const Navbar = () => {
           </motion.button>
         </div>
       </div>
+
+      {/* Mobile menu */}
+      {isOpen && (
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.3 }}
+          className="md:hidden mt-2 mx-4 p-4 glass-dark rounded-xl"
+        >
+          <div className="flex flex-col space-y-4">
+            {navLinks.map((link) => {
+              const isActive =
+                location.pathname === link.path ||
+                (link.internal && activeSection === link.path);
+              return link.internal ? (
+                <button
+                  key={link.name}
+                  onClick={() => {
+                    scrollToSection(link.path);
+                    setIsOpen(false);
+                  }}
+                  className={`px-4 py-2 text-text-light text-center rounded-md transition-all ${
+                    isActive ? "bg-primary/30" : "hover:bg-white/10"
+                  }`}
+                >
+                  {link.name}
+                </button>
+              ) : (
+                <NavLink
+                  key={link.name}
+                  to={link.path}
+                  end
+                  onClick={() => setIsOpen(false)}
+                  className={({ isActive }) =>
+                    `px-4 py-2 text-text-light text-center rounded-md transition-all ${
+                      isActive ? "bg-primary/30" : "hover:bg-white/10"
+                    }`
+                  }
+                >
+                  {link.name}
+                </NavLink>
+              );
+            })}
+          </div>
+        </motion.div>
+      )}
     </motion.nav>
   );
 };
