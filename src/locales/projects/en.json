@@ -53,6 +53,7 @@
       ],
       "date": "January 2025",
       "client": "ADLCabinet",
+      "link": "https://cabinetdentaire-pierrecorneille.fr",
       "thumbnail": "images/realisations/adl-cabinet-website-thumbnail.jpg",
       "images": [
         "images/realisations/adl-cabinet-website-thumbnail.jpg",
@@ -76,6 +77,7 @@
       ],
       "date": "January 2025",
       "client": "ADLCabinet",
+      "link": "https://cabinetdentaire-pierrecorneille.fr",
       "thumbnail": "images/realisations/adl-cabinet-photos-thumbnail.png",
       "images": [
         "images/realisations/adlcabinet-photos-1.jpg",
@@ -116,8 +118,9 @@
           "url": "https://github.com/"
         }
       ],
-      "date": "March 2025",
+      "date": "March 2024",
       "client": "Personal Project",
+      "link": "https://mime-time.vercel.app/",
       "thumbnail": "images/realisations/mime-time-thumbnail.png",
       "images": ["images/realisations/mime-time-thumbnail.png"]
     },
@@ -151,6 +154,7 @@
       ],
       "date": "October 2024",
       "client": "Personal Project",
+      "link": "https://your-prefer-this-or-that.vercel.app/",
       "thumbnail": "images/realisations/thisorthat-thumbnail.jpg",
       "images": ["images/realisations/thisorthat-thumbnail.jpg"]
     }

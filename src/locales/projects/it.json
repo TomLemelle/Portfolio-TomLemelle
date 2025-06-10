@@ -30,6 +30,7 @@
       ],
       "date": "Novembre 2023 - Gennaio 2025",
       "client": "SafeEat",
+      "link": "https://cabinetdentaire-pierrecorneille.fr",
       "thumbnail": "images/realisations/safeeat-thumbnail.png",
       "images": [
         "images/realisations/safeeat-thumbnail.png",
@@ -54,6 +55,7 @@
       "date": "Gennaio 2025",
       "client": "ADLCabinet",
       "thumbnail": "images/realisations/adl-cabinet-website-thumbnail.jpg",
+      "link": "https://cabinetdentaire-pierrecorneille.fr",
       "images": [
         "images/realisations/adl-cabinet-website-thumbnail.jpg",
         "images/realisations/realisation-project-adlcabinet-2.jpg",
@@ -116,8 +118,9 @@
           "url": "https://github.com/"
         }
       ],
-      "date": "Marzo 2025",
+      "date": "Marzo 2024",
       "client": "Progetto Personale",
+      "link": "https://mime-time.vercel.app/",
       "thumbnail": "images/realisations/mime-time-thumbnail.png",
       "images": ["images/realisations/mime-time-thumbnail.png"]
     },
@@ -151,6 +154,7 @@
       ],
       "date": "Ottobre 2024",
       "client": "Progetto Personale",
+      "link": "https://your-prefer-this-or-that.vercel.app/",
       "thumbnail": "images/realisations/thisorthat-thumbnail.jpg",
       "images": ["images/realisations/thisorthat-thumbnail.jpg"]
     }

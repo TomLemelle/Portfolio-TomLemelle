@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import TestimonialCard from "./TestimonialCard";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -49,8 +49,12 @@ const Testimonials = () => {
             spaceBetween={30}
             slidesPerView={1}
             pagination={{ clickable: true }}
-            modules={[Pagination, Autoplay]}
-            autoplay={{ delay: 5000, disableOnInteraction: false }}
+            navigation={{
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            }}
+            modules={[Pagination, Autoplay, Navigation]}
+            //autoplay={{ delay: 5000, disableOnInteraction: false }}
             breakpoints={{
               768: {
                 slidesPerView: 2,
@@ -66,6 +70,8 @@ const Testimonials = () => {
                 <TestimonialCard testimonial={testimonial} />
               </SwiperSlide>
             ))}
+            <div className="swiper-button-prev" />
+            <div className="swiper-button-next" />
           </Swiper>
         </motion.div>
       </div>
