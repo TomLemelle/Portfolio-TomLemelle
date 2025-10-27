@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import "swiper/css";
 import { useTranslation } from "../../contexts/TranslationProvider";
 
 const companies = [
+  {
+    name: "Somelia",
+    logo: "images/logos/somelia-logo.png",
+  },
   {
     name: "SafeEat",
     logo: "images/logos/SafeEat-logo.png",
