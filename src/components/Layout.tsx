@@ -26,7 +26,7 @@ const Layout = () => {
       sessionStorage.setItem("hasVisited", "true");
       setTimeout(() => {
         setIsLoading(false);
-      }, 2000);
+      }, 2500);
     }
   }, []);
 
@@ -34,28 +34,28 @@ const Layout = () => {
     <div className="min-h-screen flex flex-col relative">
       {/* Loader */}
       {isLoading && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-primary to-secondary">
-          <div className="absolute text-white text-center">
-            <motion.h1
-              className="text-4xl md:text-6xl font-bold tracking-tight"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-            >
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-gradient-to-br from-primary to-secondary overflow-hidden">
+          {/* Text behind the gear */}
+          <div className="absolute text-white text-center z-10">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
               Tom Lemelle
-            </motion.h1>
-            <motion.p
-              className="text-lg md:text-xl mt-2"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
+            </h1>
+            <p className="text-lg md:text-xl mt-2">
               Developer & Photographer
-            </motion.p>
+            </p>
           </div>
 
+          {/* Overlay mask that reveals text */}
           <motion.div
-            className="absolute"
+            className="absolute inset-0 bg-gradient-to-br from-primary to-secondary z-20"
+            initial={{ x: "0%" }}
+            animate={{ x: "100%" }}
+            transition={{ duration: 1.5, ease: "easeInOut", delay: 0.5 }}
+          />
+
+          {/* Gear icon */}
+          <motion.div
+            className="absolute z-30"
             initial={{ x: "-150%" }}
             animate={{ x: "150%" }}
             transition={{ duration: 1.5, ease: "easeInOut", delay: 0.5 }}
@@ -70,14 +70,17 @@ const Layout = () => {
         </div>
       )}
 
-      <div className="flex flex-col min-h-screen">
-        <Navbar />
-        <LanguageSwitcher />
-        <main className="flex-grow overflow-visible">
-          <Outlet />
-        </main>
-        <Footer />
-      </div>
+      {/* Main content - hidden during loading */}
+      {!isLoading && (
+        <div className="flex flex-col min-h-screen">
+          <Navbar />
+          <LanguageSwitcher />
+          <main className="flex-grow overflow-visible">
+            <Outlet />
+          </main>
+          <Footer />
+        </div>
+      )}
     </div>
   );
 };
