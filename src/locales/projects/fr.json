@@ -1,6 +1,66 @@
 {
   "projects": [
     {
+      "id": "somelia-digital-sommelier",
+      "title": "Somelia - Choisir le Vin Parfait en Magasin avec l'IA",
+      "description": "Application web de recommandation de vins utilisant l'intelligence artificielle pour guider les utilisateurs et les professionnels dans leurs choix œnologiques.",
+      "content": "## Somelia : Plateforme de recommandation de vins par IA\n\nDéveloppement d'une application web innovante pour démocratiser la découverte du vin. **Somelia** propose deux interfaces distinctes : une pour le grand public et une pour les professionnels de la grande distribution.\n\n---\n\n## Une expérience simple et accessible\n\nL'application guide l'utilisateur à travers un **questionnaire de 6 questions** pour comprendre ses préférences :\n\n- Questions simples et intuitives (certaines optionnelles)\n- Occasion, type de plat, budget et préférences gustatives\n- Recherche par ville ou géolocalisation depuis chez soi\n- Interface moderne et fluide\n\nL'intelligence artificielle analyse les réponses pour proposer **les 3 meilleurs vins** parfaitement adaptés aux critères de l'utilisateur.\n\n---\n\n## Fonctionnalités pour les utilisateurs\n\n- Accès direct sans inscription\n- Questionnaire intelligent en 6 questions\n- Recommandations IA personnalisées\n- Recherche géographique (ville ou géolocalisation)\n- Interface responsive et animations fluides\n\n---\n\n## Plateforme professionnelle pour la grande distribution\n\nLes professionnels (supermarchés, hypermarchés, chaînes, grandes surfaces) disposent d'un **espace de gestion dédié** :\n\n- Gestion complète du catalogue de vins\n- Suivi des stocks en temps réel\n- QR Codes automatiques pour chaque point de vente\n- Tableau de bord avec statistiques détaillées\n- Pages publiques accessibles via QR Code\n\nLes clients peuvent scanner le QR Code en magasin pour accéder au catalogue et bénéficier de recommandations personnalisées.\n\n---\n\n## Mon rôle\n\nEn tant que **développeur full-stack**, j'ai conçu et développé l'ensemble de l'application :\n\n- Développement complet (**Next.js**, **React**, **AdonisJS**, **TypeScript**)\n- Intégration de l'**intelligence artificielle** pour les recommandations\n- Architecture : **PostgreSQL**, **Redis**, **Tailwind CSS**, **Redux Toolkit**\n- Système de géolocalisation et recherche par ville\n- Dashboard analytics pour les professionnels\n\n---\n\n## Technologies utilisées\n\n- **Next.js**: [https://nextjs.org](https://nextjs.org)\n- **React**: [https://react.dev](https://react.dev)\n- **AdonisJS**: [https://adonisjs.com](https://adonisjs.com)\n- **TypeScript**: [https://www.typescriptlang.org](https://www.typescriptlang.org)\n- **PostgreSQL**: [https://www.postgresql.org](https://www.postgresql.org)\n- **Redis**: [https://redis.io](https://redis.io)\n- **Tailwind CSS**: [https://tailwindcss.com](https://tailwindcss.com)\n- **OpenAI**: [https://openai.com](https://openai.com)\n\n> Ce projet a été réalisé en 2025.",
+      "categories": ["custom"],
+      "technologies": [
+        {
+          "name": "Next.js",
+          "url": "https://nextjs.org"
+        },
+        {
+          "name": "React",
+          "url": "https://react.dev"
+        },
+        {
+          "name": "TypeScript",
+          "url": "https://www.typescriptlang.org"
+        },
+        {
+          "name": "AdonisJS",
+          "url": "https://adonisjs.com"
+        },
+        {
+          "name": "PostgreSQL",
+          "url": "https://www.postgresql.org"
+        },
+        {
+          "name": "Redis",
+          "url": "https://redis.io"
+        },
+        {
+          "name": "OpenAI GPT-5",
+          "url": "https://openai.com"
+        },
+        {
+          "name": "Tailwind CSS",
+          "url": "https://tailwindcss.com"
+        },
+        {
+          "name": "Redux Toolkit",
+          "url": "https://redux-toolkit.js.org"
+        },
+        {
+          "name": "Framer Motion",
+          "url": "https://www.framer.com/motion"
+        }
+      ],
+      "date": "2025",
+      "client": "Somelia",
+      "link": "https://somelia.co",
+      "thumbnail": "images/realisations/somelia-thumbnail.jpg",
+      "images": [
+        "images/realisations/realisation-somelia-landingpage1.jpg",
+        "images/realisations/realisation-somelia-landingpage2.jpg",
+        "images/realisations/realisation-someliapro-landingpage1.jpg",
+        "images/realisations/realisation-someliapro-landingpage2.jpg",
+        "images/realisations/realisation-somelia-contact-landingpage.jpg"
+      ]
+    },
+    {
       "id": "safeeat",
       "title": "SafeEat - Startup",
       "description": "Plateforme pour la gestion des allergènes en restauration.",

@@ -178,7 +178,7 @@ const ProjectDetailPage = () => {
               <h3 className="text-xl font-semibold mb-4">
                 {dictionary.detailedProject.technologies}
               </h3>
-              <div className="space-y-2 mb-8">
+              <div className="grid grid-cols-2 gap-2 mb-8">
                 {project.technologies.map((tech) => (
                   <div
                     key={tech.name}
