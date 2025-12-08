@@ -178,19 +178,13 @@ const ProjectDetailPage = () => {
               <h3 className="text-xl font-semibold mb-4">
                 {dictionary.detailedProject.technologies}
               </h3>
-              <div className="grid grid-cols-2 gap-2 mb-8">
+              <div className="flex flex-wrap gap-2 mb-8">
                 {project.technologies.map((tech) => (
-                  <div
-                    key={tech.name}
-                    className="py-2 px-3 rounded-lg bg-white/20 flex items-center gap-2"
-                  >
-                    <a href={tech.url} target="_blank">
-                      <span className="px-3 py-1 rounded-full bg-primary text-white text-sm cursor-pointer">
-                        {tech.name[0].toUpperCase() +
-                          tech.name.slice(1).toLowerCase()}
-                      </span>
-                    </a>
-                  </div>
+                  <a key={tech.name} href={tech.url} target="_blank" rel="noopener noreferrer">
+                    <span className="px-3 py-1 rounded-full bg-primary text-white text-sm cursor-pointer hover:bg-primary/80 transition-colors inline-block">
+                      {tech.name}
+                    </span>
+                  </a>
                 ))}
               </div>
 
