@@ -48,7 +48,8 @@
           "url": "https://www.framer.com/motion"
         }
       ],
-      "date": "2025",
+      "date": "September 2024 - Present",
+      "sortDate": "2025-12-31",
       "client": "Somelia",
       "link": "https://somelia.co",
       "thumbnail": "images/realisations/somelia-thumbnail.jpg",
@@ -89,6 +90,7 @@
         }
       ],
       "date": "November 2023 - January 2025",
+      "sortDate": "2025-01-31",
       "client": "SafeEat",
       "thumbnail": "images/realisations/safeeat-thumbnail.png",
       "images": [
@@ -111,7 +113,8 @@
           "url": "https://webflow.com/"
         }
       ],
-      "date": "January 2025",
+      "date": "November 2024 - January 2025",
+      "sortDate": "2025-01-15",
       "client": "Cabinet Dentaire Pierre Corneille",
       "link": "https://cabinetdentaire-pierrecorneille.fr",
       "thumbnail": "images/realisations/adl-cabinet-website-thumbnail.jpg",
@@ -135,7 +138,8 @@
           "url": "https://www.adobe.com/fr/products/photoshop-lightroom-classic.html"
         }
       ],
-      "date": "January 2025",
+      "date": "November 2024 - January 2025",
+      "sortDate": "2025-01-15",
       "client": "Cabinet Dentaire Pierre Corneille",
       "link": "https://cabinetdentaire-pierrecorneille.fr",
       "thumbnail": "images/realisations/adl-cabinet-photos-thumbnail.png",
@@ -179,6 +183,7 @@
         }
       ],
       "date": "March 2024",
+      "sortDate": "2024-03-15",
       "client": "Personal Project",
       "link": "https://mime-time.vercel.app/",
       "thumbnail": "images/realisations/mime-time-thumbnail.png",
@@ -213,6 +218,7 @@
         }
       ],
       "date": "October 2024",
+      "sortDate": "2024-10-15",
       "client": "Personal Project",
       "link": "https://your-prefer-this-or-that.vercel.app/",
       "thumbnail": "images/realisations/thisorthat-thumbnail.jpg",

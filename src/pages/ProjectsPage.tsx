@@ -1,21 +1,35 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { FilterOption, Project } from "../types";
+import { FilterOption, Project, VideoProject } from "../types";
 import { useTranslation } from "../contexts/TranslationProvider";
+import VideoCard from "../components/VideoCard";
 
 import fr from "../locales/projects/fr.json";
 import en from "../locales/projects/en.json";
 import it from "../locales/projects/it.json";
 
+import frVideos from "../locales/videos/fr.json";
+import enVideos from "../locales/videos/en.json";
+import itVideos from "../locales/videos/it.json";
+
 const ProjectsPage = () => {
   const { dictionary, locale } = useTranslation();
   const [filteredProjects, setFilteredProjects] = useState<Project[]>([]);
+  const [filteredVideos, setFilteredVideos] = useState<VideoProject[]>([]);
   const [activeFilter, setActiveFilter] = useState<string>("all");
 
   // Chargement des projets selon la langue active
   const allProjects: Record<string, { projects: Project[] }> = { en, fr, it };
   const projects: Project[] = allProjects[locale].projects;
+
+  // Chargement des vidéos selon la langue active
+  const allVideos: Record<string, { videos: VideoProject[] }> = {
+    en: enVideos,
+    fr: frVideos,
+    it: itVideos
+  };
+  const videos: VideoProject[] = allVideos[locale].videos;
 
   // Catégories traduites dynamiquement
   const categories: FilterOption[] = [
@@ -29,14 +43,31 @@ const ProjectsPage = () => {
   ];
 
   useEffect(() => {
-    if (activeFilter === "all") {
-      setFilteredProjects(projects);
+    // Fonction pour trier par date (du plus récent au plus ancien)
+    const sortByDate = (items: (Project | VideoProject)[]) => {
+      return [...items].sort((a, b) => {
+        const dateA = a.sortDate || "0000-00-00";
+        const dateB = b.sortDate || "0000-00-00";
+        // Tri décroissant (plus récent en premier)
+        return dateB.localeCompare(dateA);
+      });
+    };
+
+    if (activeFilter === "videography") {
+      // Si le filtre est "videography", on affiche uniquement les vidéos triées
+      setFilteredProjects([]);
+      setFilteredVideos(sortByDate(videos) as VideoProject[]);
+    } else if (activeFilter === "all") {
+      // Si "all", on affiche tous les projets ET toutes les vidéos, triés par date
+      setFilteredProjects(sortByDate(projects) as Project[]);
+      setFilteredVideos(sortByDate(videos) as VideoProject[]);
     } else {
-      setFilteredProjects(
-        projects.filter((project) => project.categories.includes(activeFilter))
-      );
+      // Sinon, on filtre les projets normalement (sans les vidéos) et on trie
+      const filtered = projects.filter((project) => project.categories.includes(activeFilter));
+      setFilteredProjects(sortByDate(filtered) as Project[]);
+      setFilteredVideos([]);
     }
-  }, [activeFilter, projects]);
+  }, [activeFilter, projects, videos]);
 
   return (
     <motion.div
@@ -75,6 +106,7 @@ const ProjectsPage = () => {
 
         {/* Projects grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Affichage des projets normaux */}
           {filteredProjects.map((project) => (
             <motion.div
               layout
@@ -123,6 +155,12 @@ const ProjectsPage = () => {
               </Link>
             </motion.div>
           ))}
+
+          {/* Affichage des vidéos après les projets */}
+          {filteredVideos.length > 0 &&
+            filteredVideos.map((video) => (
+              <VideoCard key={video.id} video={video} />
+            ))}
         </div>
       </div>
     </motion.div>

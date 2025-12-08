@@ -1,0 +1,49 @@
+{
+  "videos": [
+    {
+      "id": "piction-big-event",
+      "title": "PICTION al BIG (Evento BPI)",
+      "description": "PICTION al #BIG, l'evento di Bpifrance! Video riassuntivo di questo importante evento dedicato all'innovazione.",
+      "youtubeId": "AUCgHl41exA",
+      "date": "Ottobre 2023",
+      "sortDate": "2023-10-10",
+      "categories": ["videography"]
+    },
+    {
+      "id": "piction-nbm-securite",
+      "title": "PICTION - NBM Sécurité",
+      "description": "Incontro con NBM Sécurité, azienda specializzata in sicurezza e ristrutturazione abitativa. Copertura dell'inaugurazione dei nuovi locali.",
+      "youtubeId": "qKr44SbW30A",
+      "date": "Marzo 2023",
+      "sortDate": "2023-03-21",
+      "categories": ["videography"]
+    },
+    {
+      "id": "interview-tu-commences-demain",
+      "title": "Intervista - TU COMMENCES DEMAIN",
+      "description": "Incontro con Charles, co-fondatore e CEO di TU COMMENCES DEMAIN. Intervista per scoprire il suo percorso e la sua azienda.",
+      "youtubeId": "ZqsaJDnNlv8",
+      "date": "Novembre 2022",
+      "sortDate": "2022-11-23",
+      "categories": ["videography"]
+    },
+    {
+      "id": "interview-esprit-zen",
+      "title": "Intervista - Esprit Zen",
+      "description": "Incontro con Esprit Zen, creatore di giardini giapponesi. Scoperta del mestiere di creatore di giardini e delle sue diverse sfaccettature.",
+      "youtubeId": "t4VeCI6iQVk",
+      "date": "Novembre 2022",
+      "sortDate": "2022-11-22",
+      "categories": ["videography"]
+    },
+    {
+      "id": "interview-comptoir-mathilde",
+      "title": "Intervista - Le Comptoir de Mathilde",
+      "description": "Incontro con Le Comptoir de Mathilde. Intervista per scoprire le diverse sfaccettature di questa appassionante professione.",
+      "youtubeId": "dwfQgh11eRQ",
+      "date": "Novembre 2022",
+      "sortDate": "2022-11-11",
+      "categories": ["videography"]
+    }
+  ]
+}

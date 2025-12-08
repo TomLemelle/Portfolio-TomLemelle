@@ -7,12 +7,23 @@ export interface Project {
   content: string;
   categories: string[];
   date?: string;
+  sortDate?: string; // Format ISO pour le tri (YYYY-MM-DD)
   client?: string;
   link?: string;
   technologies: ITechnologie[];
   thumbnail: string;
   images: string[];
   featured?: boolean;
+}
+
+export interface VideoProject {
+  id: string;
+  title: string;
+  description: string;
+  youtubeId: string;
+  date?: string;
+  sortDate?: string; // Format ISO pour le tri (YYYY-MM-DD)
+  categories: string[];
 }
 
 export interface ITechnologie {
