@@ -1,6 +1,15 @@
 {
   "videos": [
     {
+      "id": "court-metrage-introspection",
+      "title": "Court métrage - Introspection",
+      "description": "J'écris... mais je ne sais pas exactement pourquoi. Je rature, je déchire, je continue. Quelque part entre l'incertitude et la liberté, chaque mot est un reflet de mes pensées. Une vidéo intime, sombre et cinématographique.",
+      "youtubeId": "Ap3j-oVK-jA",
+      "date": "Décembre 2025",
+      "sortDate": "2025-12-01",
+      "categories": ["videography"]
+    },
+    {
       "id": "piction-big-event",
       "title": "PICTION était au BIG (Événement de la BPI)",
       "description": "PICTION était au #BIG, l'événement de Bpifrance ! Vidéo récapitulant la journée de cet événement majeur dédié à l'innovation.",

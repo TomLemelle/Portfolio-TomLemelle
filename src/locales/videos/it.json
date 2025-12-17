@@ -1,6 +1,15 @@
 {
   "videos": [
     {
+      "id": "court-metrage-introspection",
+      "title": "Cortometraggio - Introspezione",
+      "description": "Scrivo... ma non so esattamente perché. Cancello, strappo, continuo. Da qualche parte tra l'incertezza e la libertà, ogni parola è un riflesso dei miei pensieri. Un video intimo, scuro e cinematografico.",
+      "youtubeId": "Ap3j-oVK-jA",
+      "date": "Dicembre 2025",
+      "sortDate": "2025-12-01",
+      "categories": ["videography"]
+    },
+    {
       "id": "piction-big-event",
       "title": "PICTION al BIG (Evento BPI)",
       "description": "PICTION al #BIG, l'evento di Bpifrance! Video riassuntivo di questo importante evento dedicato all'innovazione.",
