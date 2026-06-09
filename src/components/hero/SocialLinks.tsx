@@ -3,9 +3,10 @@ import { motion } from "framer-motion";
 
 interface SocialLinksProps {
   className?: string;
+  dark?: boolean;
 }
 
-const SocialLinks = ({ className = "" }: SocialLinksProps) => {
+const SocialLinks = ({ className = "", dark = false }: SocialLinksProps) => {
   const socialLinks = [
     {
       name: "GitHub",
@@ -69,7 +70,7 @@ const SocialLinks = ({ className = "" }: SocialLinksProps) => {
             color: "#ffffff",
           }}
           whileTap={{ scale: 0.95 }}
-          className="p-2 glass rounded-full hover:shadow-lg transition-all text-text-dark"
+          className={`p-2 rounded-full hover:shadow-lg transition-all ${dark ? "border border-white/20 bg-white/5 text-white backdrop-blur-md hover:bg-white/10" : "glass text-text-dark"}`}
           aria-label={link.name}
           style={{
             transition: "background-color 0.3s ease, color 0.3s ease",

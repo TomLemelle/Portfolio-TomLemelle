@@ -1,91 +1,71 @@
-import { Settings } from "lucide-react";
+import { Leaf } from "lucide-react";
 import { Link } from "react-router-dom";
 import SocialLinks from "./hero/SocialLinks";
 import { useTranslation } from "../contexts/TranslationProvider";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   const { dictionary } = useTranslation();
-
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-white text-light">
-      <div className="max-w-7xl mx-auto px-4 md:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer style={{ background: "rgb(8,14,10)", borderTop: "1px solid rgba(82,183,136,0.12)" }}>
+      <div className="max-w-7xl mx-auto px-4 md:px-8 py-14">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
-            <h3 className="text-2xl font-bold mb-4 relative">
-              <span className="text-primary">Tom</span>{" "}
-              <span className="text-primary">Lemelle</span>
-              <span className="logo-container relative group ml-2">
-                <Settings
-                  size={15}
-                  className="tom-settings-icon text-black absolute top-[10px] -left-1 transition-transform duration-400 ease-in-out group-hover:rotate-[360deg]"
-                />
-              </span>
-            </h3>
-            <p className="mb-4 opacity-80">{dictionary.home.footer.slogan}</p>
+            <div className="flex items-center gap-2 mb-4">
+              <span className="text-2xl font-bold gradient-text-forest">Tom Lemelle</span>
+              <Leaf size={14} style={{ color: "rgb(82,183,136)" }} />
+            </div>
+            <p className="text-sm leading-relaxed" style={{ color: "rgba(235,229,210,0.45)" }}>
+              {dictionary.home.footer.slogan}
+            </p>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4">
+            <h4 className="text-xs font-semibold tracking-[0.3em] uppercase mb-5" style={{ color: "rgb(82,183,136)" }}>
               {dictionary.home.footer.quickLinks.heading}
             </h4>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/" className="hover:text-primary transition-colors">
-                  {dictionary.home.footer.quickLinks.home}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/projects"
-                  className="hover:text-primary transition-colors"
-                >
-                  {dictionary.home.footer.quickLinks.projects}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/#services"
-                  className="hover:text-primary transition-colors"
-                >
-                  {dictionary.home.footer.quickLinks.services}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/#testimonials"
-                  className="hover:text-primary transition-colors"
-                >
-                  {dictionary.home.footer.quickLinks.testimonials}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/#contact"
-                  className="hover:text-primary transition-colors"
-                >
-                  {dictionary.home.footer.quickLinks.contact}
-                </Link>
-              </li>
+            <ul className="space-y-2.5 text-sm">
+              {[
+                { label: dictionary.home.footer.quickLinks.home, to: "/" },
+                { label: dictionary.home.footer.quickLinks.projects, to: "/projects" },
+                { label: dictionary.home.footer.quickLinks.services, to: "/#services" },
+                { label: dictionary.home.footer.quickLinks.testimonials, to: "/#testimonials" },
+                { label: dictionary.home.footer.quickLinks.contact, to: "/#contact" },
+              ].map((l) => (
+                <li key={l.label}>
+                  <Link
+                    to={l.to}
+                    className="flex items-center gap-2 transition-colors group"
+                    style={{ color: "rgba(235,229,210,0.5)" }}
+                    onMouseEnter={(e) => (e.currentTarget.style.color = "rgb(82,183,136)")}
+                    onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(235,229,210,0.5)")}
+                  >
+                    <motion.span
+                      className="w-1 h-1 rounded-full flex-shrink-0"
+                      style={{ background: "rgba(82,183,136,0.5)" }}
+                      whileHover={{ scale: 2 }}
+                    />
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4">
+            <h4 className="text-xs font-semibold tracking-[0.3em] uppercase mb-5" style={{ color: "rgb(180,140,50)" }}>
               {dictionary.home.footer.contact.heading}
             </h4>
-            <p className="mb-2">Rouen, France</p>
-            <p className="mb-4">tom.lemelle@gmail.com</p>
-
-            <div className="mt-4">
-              <SocialLinks className="space-x-4 mt-4" />
-            </div>
+            <p className="text-sm mb-1" style={{ color: "rgba(235,229,210,0.5)" }}>Rouen, France</p>
+            <p className="text-sm mb-5" style={{ color: "rgba(235,229,210,0.5)" }}>tom.lemelle@gmail.com</p>
+            <SocialLinks dark />
           </div>
         </div>
 
-        <div className="border-t border-white/10 mt-8 pt-8 text-center">
-          <p>
+        <div className="mt-12 pt-6 text-center" style={{ borderTop: "1px solid rgba(82,183,136,0.1)" }}>
+          <p className="text-xs" style={{ color: "rgba(235,229,210,0.3)" }}>
             &copy; {currentYear} Tom Lemelle. {dictionary.home.footer.copyright}
           </p>
         </div>
