@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion';
-import { Quote } from 'lucide-react';
-import { Testimonial } from '../../types';
+import { motion } from "framer-motion";
+import { Quote } from "lucide-react";
+import { Testimonial } from "../../types";
 
 interface TestimonialCardProps {
   testimonial: Testimonial;
@@ -22,13 +22,11 @@ const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
               className="w-12 h-12 rounded-full object-cover border-2"
               style={{ borderColor: "rgba(45,106,79,0.3)" }}
             />
-            <div
-              className="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 rounded-full border-2 border-white"
-              style={{ background: "rgb(82,183,136)" }}
-            />
           </div>
           <div>
-            <h4 className="font-semibold text-sm" style={{ color: "rgb(28,43,30)" }}>{testimonial.name}</h4>
+            <h4 className="font-semibold text-sm text-white">
+              {testimonial.name}
+            </h4>
             <p className="text-xs opacity-60">{testimonial.position}</p>
           </div>
         </div>
@@ -37,14 +35,21 @@ const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
         </span>
       </div>
 
-      <p className="italic text-sm opacity-80 mb-4 leading-relaxed flex-1">{testimonial.content}</p>
+      <p className="italic text-sm opacity-80 mb-4 leading-relaxed flex-1">
+        {testimonial.content}
+      </p>
 
       <div className="flex items-center gap-1 mt-auto">
         {[1, 2, 3, 4, 5].map((star) => (
           <svg
             key={star}
             className="w-4 h-4"
-            style={{ color: star <= testimonial.rating ? "rgb(200,150,40)" : "rgba(28,43,30,0.2)" }}
+            style={{
+              color:
+                star <= testimonial.rating
+                  ? "rgb(200,150,40)"
+                  : "rgba(28,43,30,0.2)",
+            }}
             fill="currentColor"
             viewBox="0 0 20 20"
           >

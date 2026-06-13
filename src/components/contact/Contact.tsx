@@ -31,7 +31,7 @@ const Contact = () => {
     {
       icon: <Phone size={20} />,
       label: dictionary.home.contact.phone,
-      value: "+33 7 67 33 83 65, uniquement professionnel",
+      value: "+33 7 67 33 83 65",
       href: "tel:+33767338365",
     },
   ];

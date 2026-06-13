@@ -161,7 +161,7 @@ const ProjectDetailPage = () => {
             className="lg:col-span-2"
           >
             <div className="glass-card p-8">
-              <div className="prose prose-h1:text-4xl prose-h1:font-bold max-w-none">
+              <div className="prose prose-h1:text-4xl prose-h1:font-bold prose-h1:text-white prose-h2:text-white prose-h3:text-white max-w-none">
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>
                   {project.content}
                 </ReactMarkdown>
